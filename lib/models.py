@@ -17,7 +17,7 @@ engine = create_engine('sqlite:///migrations_test.db')
 Base = declarative_base()
 
 class Student(Base):
-    __tablename__ = 'students'
+    __tablename__ = 'scholars'
 
     id = Column(Integer(), primary_key=True)
     name = Column(String(), index=True)
